@@ -48,7 +48,7 @@ main {
 }
 
 .cardContainer {
-    padding: 2rem;
+    padding: 3rem;
     width: 90%;
    
 }
@@ -62,7 +62,7 @@ main {
 }
 
 .vehicleCard img {
-    width: 25%;
+    width: 32%;
     margin-bottom: 1.5rem;
 }
 
@@ -70,8 +70,8 @@ main {
     font-family: var(--secondaryFont);
     font-weight: 400;
     color: var(--paragraphText);
-    line-height: 1.4rem;
-    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.8rem;
 }
 
 .btnMain {
