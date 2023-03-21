@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@300;400&display=swap');
+
+
+/* CSS Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+
+
+/* CSS Variables */
+
+:root {
+    --utilitiesBGHeadBtn: hsl(0, 0%, 95%);
+    --sedan: hsl(31, 77%, 52%);
+    --suvs: hsl(184, 100%, 22%);
+    --luxury: hsl(179, 100%, 13%);
+    --paragraphText: hsla(0, 0%, 100%, 0.75);
+    --leadFont: 'Big Shoulders Display', cursive;
+    --secondaryFont: 'Lexend Deca', sans-serif;
+    --border: solid black 1px;
+}
+
+main {
+    background-color: var(--utilitiesBGHeadBtn);
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contentContainer {
+    width: 100%;
+    max-width: 327px;
+}
+
+.carCard {
+    height: 100%;
+}
+
+.vehicleCard {
+    height: 33.33%;
+}
+
+.cardContainer {
+    padding: 2rem;
+    width: 90%;
+   
+}
+
+.vehicleCard .carType {
+    font-family: var(--leadFont);
+    text-transform: uppercase;
+    color: var(--utilitiesBGHeadBtn);
+    font-size: 40px;
+    margin-bottom: 1.5rem;
+}
+
+.vehicleCard img {
+    width: 25%;
+    margin-bottom: 1.5rem;
+}
+
+.vehicleCard p {
+    font-family: var(--secondaryFont);
+    font-weight: 400;
+    color: var(--paragraphText);
+    line-height: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.btnMain {
+    background-color: var(--utilitiesBGHeadBtn);
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    font-family: var(--secondaryFont);
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    transition-property: color, background, border;
+    transition-duration: .5s;
+
+}
+
+.btnSedan {
+    color: var(--sedan);
+}
+
+.sedans {
+    background-color: var(--sedan);
+}
+
+.suvs {
+    background-color: var(--suvs);
+}
+
+.luxury {
+    background-color: var(--luxury);
+}
+
+
+@media screen and (min-width: 920px) {
+
+    main {
+        align-items: center;
+    
+    }
+
+    .contentContainer {
+        max-width: 1440px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .carCard {
+        height: 500px;
+        max-width: 920px;
+        display: flex;
+    }
+
+    .cardContainer {
+       padding: 3rem;
+    }
+
+    .vehicleCard {
+        height: 100%;
+        width: 33.33%;
+        
+    }
+
+    .vehicleCard img {
+        width: 35%;
+    }
+
+    .vehicleCard p {
+        font-weight: 300;
+        line-height: 1.6rem;
+        margin-bottom: 5rem;
+        font-size: 14px;
+    }
+
+    .btnMain:hover {
+        background: none;
+        border: var(--utilitiesBGHeadBtn) solid 3px;
+        cursor: pointer;
+        color: var(--utilitiesBGHeadBtn);
+    }
+    
+}
+
+
+
